@@ -23,9 +23,9 @@ import java.util.Date;
  * @author brandonbarrett
  */
 public class Recorder {
-    private Date           date1;
-    private final File     FUNDFILE;
-    private String         writtenDate;
+    private Date date1;
+    private final File FUNDFILE;
+    private String writtenDate;
     private BufferedWriter myBw;
 
     public Recorder() throws IOException {
