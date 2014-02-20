@@ -58,18 +58,6 @@ public class Recorder {
         System.out.println("Fund Created");
     }
   
-    public void documentCleaner(File FUNDFILE, Date date1) throws FileNotFoundException, IOException{
-        
-    BufferedReader  myBr = new BufferedReader(new FileReader(FUNDFILE));
-        String line;
-        while ((line = myBr.readLine()) != null) {
-                myBr.readLine();
-        
-        String clearLine = line.trim();
-        
-        
-    }
-}
     public Date getDate() {
         return date1;
     }
