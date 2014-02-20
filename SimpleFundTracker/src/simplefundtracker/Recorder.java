@@ -8,8 +8,11 @@ package simplefundtracker;
 
 //~--- JDK imports ------------------------------------------------------------
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -27,6 +30,7 @@ public class Recorder {
     private final File FUNDFILE;
     private String writtenDate;
     private BufferedWriter myBw;
+    
 
     public Recorder() throws IOException {
         FUNDFILE = new File("/Users/brandonbarrett/fundFile.txt");
@@ -50,10 +54,22 @@ public class Recorder {
     public void createFund(String todaysFund) throws IOException {
         myBw.write("/: " + todaysFund + " ,");
 
-        myBw.close();
+        //myBw.close();
         System.out.println("Fund Created");
     }
-
+  
+    public void documentCleaner(File FUNDFILE, Date date1) throws FileNotFoundException, IOException{
+        
+    BufferedReader  myBr = new BufferedReader(new FileReader(FUNDFILE));
+        String line;
+        while ((line = myBr.readLine()) != null) {
+                myBr.readLine();
+        
+        String clearLine = line.trim();
+        
+        
+    }
+}
     public Date getDate() {
         return date1;
     }
