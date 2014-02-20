@@ -37,7 +37,7 @@ public class Recorder {
             System.out.println("File already exists.");
         }
     }
-r
+
     public void createHeader() throws IOException {
         DateFormat thisDateFormat = new SimpleDateFormat("MM/dd/yyyy");
         date1 = new Date();
