@@ -18,19 +18,21 @@ import java.util.TimerTask;
  * @author brandonbarrett
  */
 public class SimpleFundTracker {
-    static File myFundFile;
+    private static File myFundFile;
 
     /**
      * @param args the command line arguments
      * @throws java.io.IOException
      */
     public static void main(String[] args) throws IOException {
+        Recorder recorder = new Recorder();
         AverageCalculator Ac = new AverageCalculator();
-        Recorder r  = new Recorder();
-        
-        myFundFile = r.getFundFile();
+
+        // Task t = new Task();
+        // t.run();
+
+        myFundFile = recorder.getFundFile();
         Ac.readFile(myFundFile);
-        
     }
 }
 
