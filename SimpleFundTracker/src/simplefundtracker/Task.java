@@ -21,17 +21,16 @@ import java.util.logging.Logger;
 public final class Task extends TimerTask {
     private Recorder  r;
     private Connector c;
-    private String todaysFund;
+    private String    todaysFund;
 
-    public Task() throws IOException {
-       this.run();
-    }
+    public Task() throws IOException {}
 
-   //Make it simple, create a task that can be set to run each day at noon.
+    // Make it simple, create a task that can be set to run each day at noon.
     @Override
     public void run() {
         try {
             r = new Recorder();
+            c = new Connector();
             c.findFund();
             r.createHeader();
             todaysFund = c.getfundElement();
@@ -43,4 +42,4 @@ public final class Task extends TimerTask {
 }
 
 
-
+//~ Formatted by Jindent --- http://www.jindent.com
