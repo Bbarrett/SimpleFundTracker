@@ -27,26 +27,26 @@ import java.util.Date;
  */
 public class Recorder {
     private Date date1;
-    private final File FUNDFILE;
+    private File fundFile;
     private String writtenDate;
     private BufferedWriter myBw;
     
 
     public Recorder() throws IOException {
-        FUNDFILE = new File("/Users/brandonbarrett/fundFile.txt");
+       fundFile = new File("/Users/brandonbarrett/fundRecordFile.txt");
 
-        if (!FUNDFILE.exists()) {
-            FUNDFILE.createNewFile();
-        } else {
-            System.out.println("File already exists.");
-        }
+       if (!fundFile.exists()) {
+           fundFile.createNewFile();
+         } else {
+          System.out.println("File already exists.");
+         }
     }
 
     public void createHeader() throws IOException {
         DateFormat thisDateFormat = new SimpleDateFormat("MM/dd/yyyy");
         date1 = new Date();
         writtenDate = thisDateFormat.format(date1);
-        myBw = new BufferedWriter(new FileWriter(FUNDFILE, true));
+        myBw = new BufferedWriter(new FileWriter(fundFile, true));
         myBw.write(writtenDate);
         System.out.println("Header Created");
     }
@@ -54,7 +54,7 @@ public class Recorder {
     public void createFund(String todaysFund) throws IOException {
         myBw.write("/: " + todaysFund + " ,");
 
-        //myBw.close();
+        myBw.close();
         System.out.println("Fund Created");
     }
   
@@ -63,6 +63,6 @@ public class Recorder {
     }
 
     public File getFundFile() {
-        return FUNDFILE;
+        return fundFile;
     }
 }
