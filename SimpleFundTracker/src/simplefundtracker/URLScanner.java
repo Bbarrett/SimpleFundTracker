@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author brandonbarrett
  */
 public class URLScanner {
-    Scanner sc = new Scanner(System.in);
+    private Scanner sc = new Scanner(System.in);
     private String fundCode;
 
     public URLScanner() {}
