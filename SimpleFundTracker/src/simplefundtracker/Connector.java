@@ -21,11 +21,11 @@ public class Connector {
 
     public Connector() throws IOException {}
 
-    public void findFund() throws IOException {
+    public void findFund(String fundCode) throws IOException {
 
         // Connect to a finance website, grab fund. Make it a String.
-        fundDocument = Jsoup.connect("http://finance.yahoo.com/q?s=FFFHX").get();
-        fundElement  = fundDocument.getElementById("yfs_c10_fffhx").ownText();
+        fundDocument = Jsoup.connect("http://finance.yahoo.com/q?s="+fundCode).get();
+        fundElement  = fundDocument.getElementById("yfs_c10_"+fundCode).ownText();
     }
 
     public String getfundElement() {
