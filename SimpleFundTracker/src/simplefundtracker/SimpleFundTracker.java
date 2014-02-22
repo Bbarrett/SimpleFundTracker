@@ -11,7 +11,6 @@ package simplefundtracker;
 import java.io.File;
 import java.io.IOException;
 
-import java.util.TimerTask;
 
 /**
  *
@@ -28,8 +27,8 @@ public class SimpleFundTracker {
         Recorder recorder = new Recorder();
         AverageCalculator Ac = new AverageCalculator();
 
-        // Task t = new Task();
-        // t.run();
+         Task t = new Task();
+         t.run();
 
         myFundFile = recorder.getFundFile();
         Ac.readFile(myFundFile);
