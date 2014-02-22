@@ -40,7 +40,7 @@ public class AverageCalculator {
 
                 averageChange += d / i / 2;
             }
-
+            //Format average as a Double
             DecimalFormat df = new DecimalFormat("#.##");
 
             System.out.println(df.format(d));
