@@ -8,6 +8,7 @@ package simplefundtracker;
 
 //~--- JDK imports ------------------------------------------------------------
 
+import java.io.File;
 import java.io.IOException;
 
 import java.util.TimerTask;
@@ -42,4 +43,4 @@ public final class Task extends TimerTask {
 }
 
 
-//~ Formatted by Jindent --- http://www.jindent.com
+
