@@ -13,9 +13,9 @@ import java.util.logging.Logger;
  * @author brandonbarrett
  */
 public final class Task extends TimerTask {
-    private Recorder         r;
-    private Connector        c;
-    private String           todaysFund;
+    private Recorder r;
+    private Connector c;
+    private String todaysFund;
     private final URLScanner URLSC;
 
     public Task() throws IOException {
