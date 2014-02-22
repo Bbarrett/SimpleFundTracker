@@ -1,10 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
+/*
+* To change this license header, choose License Headers in Project Properties.
+* To change this template file, choose Tools | Templates
+* and open the template in the editor.
+ */
 package simplefundtracker;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.util.Scanner;
 
@@ -15,14 +17,18 @@ import java.util.Scanner;
 public class URLScanner {
     Scanner sc = new Scanner(System.in);
     private String fundCode;
-    
-    public URLScanner(){}
-         
-public void setURL(){
-    System.out.println("Enter your four letter fund code.");
-    fundCode = sc.next();
+
+    public URLScanner() {}
+
+    public void setURL() {
+        System.out.println("Enter your four letter fund code.");
+        fundCode = sc.next();
+    }
+
+    public String getURL() {
+        return fundCode;
+    }
 }
-public String getURL(){
-    return fundCode;
-}
-}
+
+
+
