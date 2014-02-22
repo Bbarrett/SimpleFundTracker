@@ -17,7 +17,7 @@ public class URLScanner {
     private String fundCode;
     
     public URLScanner(){}
-        
+         
 public void setURL(){
     System.out.println("Enter your four letter fund code.");
     fundCode = sc.next();
