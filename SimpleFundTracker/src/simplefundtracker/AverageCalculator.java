@@ -1,9 +1,4 @@
 
-/*
-* To change this license header, choose License Headers in Project Properties.
-* To change this template file, choose Tools | Templates
-* and open the template in the editor.
- */
 package simplefundtracker;
 
 //~--- JDK imports ------------------------------------------------------------
@@ -14,6 +9,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author brandonbarrett
@@ -22,6 +19,7 @@ public class AverageCalculator {
     private BufferedReader mBr;
     private String line;
     private Double averageChange;
+    private Double d;
 
     public AverageCalculator() {
         averageChange = 0.0;
@@ -39,17 +37,18 @@ public class AverageCalculator {
 
             // Get average of fund change amount (stored in array at odd intervals)
             for (int i = 1; i < fundChangeArray.length; i += 2) {
-                Double d = Double.parseDouble(fundChangeArray[i]);
+                d = Double.parseDouble(fundChangeArray[i]);
 
-                averageChange += i / i;
-                
+                DecimalFormat df = new DecimalFormat("#.##");
+
+                averageChange += d / i / 2;
             }
-                System.out.println(averageChange);
+
+            DecimalFormat df = new DecimalFormat("#.##");
+
+            System.out.println(df.format(d));
         }
     }
 }
-
-
-
 
 
