@@ -1,4 +1,3 @@
-
 package simplefundtracker;
 
 //~--- JDK imports ------------------------------------------------------------
@@ -38,8 +37,6 @@ public class AverageCalculator {
             // Get average of fund change amount (stored in array at odd intervals)
             for (int i = 1; i < fundChangeArray.length; i += 2) {
                 d = Double.parseDouble(fundChangeArray[i]);
-
-                DecimalFormat df = new DecimalFormat("#.##");
 
                 averageChange += d / i / 2;
             }
