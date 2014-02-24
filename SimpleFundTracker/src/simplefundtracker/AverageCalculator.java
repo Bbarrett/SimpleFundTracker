@@ -43,9 +43,15 @@ public class AverageCalculator {
             //Format average as a Double
             DecimalFormat df = new DecimalFormat("#.##");
 
-            System.out.println(df.format(d));
+            System.out.println(df.format(averageChange));
         }
     }
+    
+  public Double getAverageChange() {
+        return averageChange;
 }
+    
+}
+
 
 
