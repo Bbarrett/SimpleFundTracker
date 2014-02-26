@@ -12,7 +12,7 @@ import java.util.logging.Logger;
  *
  * @author brandonbarrett
  */
-public final class Task extends TimerTask {
+public class Task extends TimerTask {
     private Recorder r;
     private Connector c;
     private String todaysFund;
@@ -38,9 +38,11 @@ public final class Task extends TimerTask {
             r.createFund(todaysFund);
         } catch (IOException ex) {
             Logger.getLogger(Task.class.getName()).log(Level.SEVERE, null, ex);
+        
+    
         }
     }
+
+
+
 }
-
-
-
