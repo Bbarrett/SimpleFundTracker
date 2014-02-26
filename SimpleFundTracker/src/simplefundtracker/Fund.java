@@ -1,4 +1,3 @@
-
 package simplefundtracker;
 
 /**
@@ -6,17 +5,11 @@ package simplefundtracker;
  * @author brandonbarrett
  */
 public class Fund {
-    
-    private final String FUNDNAME;
-    
-    public Fund(){
-    
-    FUNDNAME = "Fidelity Freedom 2050";
-        
-    }
-   
-    public String getFundName() {
-        return FUNDNAME;
+    private String fundName;
+    private int todaysValue;
+
+    public Fund(String fundName) {
+        fundName = this.fundName;
     }
 }
 
