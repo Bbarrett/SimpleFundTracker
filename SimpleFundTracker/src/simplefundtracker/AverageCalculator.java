@@ -19,6 +19,7 @@ public class AverageCalculator {
     private String line;
     private Double averageChange;
     private Double d;
+    private String [] fundChangeArray;
 
     public AverageCalculator() {
         averageChange = 0.0;
@@ -32,7 +33,7 @@ public class AverageCalculator {
         while ((line = mBr.readLine()) != null) {
             mBr.readLine();
 
-            String[] fundChangeArray = line.split(" ");
+             fundChangeArray = line.split(" ");
 
             // Get average of fund change amount (stored in array at odd intervals)
             for (int i = 1; i < fundChangeArray.length; i += 2) {
@@ -49,9 +50,11 @@ public class AverageCalculator {
     
   public Double getAverageChange() {
         return averageChange;
+   }
+ 
 }
     
-}
+
 
 
 
