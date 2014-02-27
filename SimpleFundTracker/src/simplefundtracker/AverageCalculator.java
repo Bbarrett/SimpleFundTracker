@@ -16,9 +16,9 @@ import java.text.DecimalFormat;
  */
 public class AverageCalculator {
     private BufferedReader mBr;
-    private String         line;
-    private Double         averageChange;
-    private Double         d;
+    private String line;
+    private Double averageChange;
+    private Double d;
     
     public AverageCalculator() {
         averageChange = 0.0;
