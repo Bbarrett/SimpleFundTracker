@@ -50,4 +50,3 @@ public class DocumentCleaner extends Task {
 }
 
 
-//~ Formatted by Jindent --- http://www.jindent.com
