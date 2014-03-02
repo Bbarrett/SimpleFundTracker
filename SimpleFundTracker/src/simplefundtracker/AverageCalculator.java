@@ -19,27 +19,24 @@ public class AverageCalculator {
     private String line;
     private Double averageChange;
     private Double d;
-    
+
     public AverageCalculator() {
         averageChange = 0.0;
     }
 
     public void readFile(File FundFile) throws FileNotFoundException, IOException {
-
-        // Read file
         mBr = new BufferedReader(new FileReader(FundFile));
 
         while ((line = mBr.readLine()) != null) {
             mBr.readLine();
-           String[] fundChangeArray = line.split(" ");
 
-            // Get average of fund change amount (stored in array at odd intervals)
+            String[] fundChangeArray = line.split(" ");
+
             for (int i = 1; i < fundChangeArray.length; i += 2) {
                 d             = Double.parseDouble(fundChangeArray[i]);
                 averageChange += d / i / 2;
             }
 
-            // Format average as a Double
             DecimalFormat df = new DecimalFormat("#.##");
 
             System.out.println(df.format(averageChange));
