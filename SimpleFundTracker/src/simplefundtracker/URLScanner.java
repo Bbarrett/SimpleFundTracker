@@ -10,14 +10,14 @@ import java.util.Scanner;
  * @author brandonbarrett
  */
 public class URLScanner {
-    private Scanner sc = new Scanner(System.in);
+    private final Scanner SC = new Scanner(System.in);
     private String fundCode;
 
     public URLScanner() {}
 
     public void setURL() {
         System.out.println("Enter your four letter fund code.");
-        fundCode = sc.next();
+        fundCode = SC.next();
     }
 
     public String getURL() {
