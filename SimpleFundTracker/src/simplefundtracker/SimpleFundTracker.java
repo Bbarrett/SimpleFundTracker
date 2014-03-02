@@ -1,11 +1,9 @@
-
 package simplefundtracker;
 
 //~--- JDK imports ------------------------------------------------------------
 
 import java.io.File;
 import java.io.IOException;
-
 
 /**
  *
@@ -21,10 +19,9 @@ public class SimpleFundTracker {
     public static void main(String[] args) throws IOException {
         Recorder recorder = new Recorder();
         AverageCalculator Ac = new AverageCalculator();
+        Task t  = new Task();
 
-         Task t = new Task();
-         t.run();
-
+        t.run();
         myFundFile = recorder.getFundFile();
         Ac.readFile(myFundFile);
     }
