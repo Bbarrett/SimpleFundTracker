@@ -37,9 +37,9 @@ public class DocumentCleaner extends Task {
     private void cleanDuplicateDates(File fundFile, String Date) throws IOException {
         fileBr = new BufferedReader(new FileReader(fundFile));
 
-        String   newLine   = fileBr.readLine();
+        String   newLine = fileBr.readLine();
         String[] lineArray = newLine.split("");
-        Set      testSet   = new HashSet();
+        Set testSet = new HashSet();
 
         for (String str : lineArray) {
             if (!testSet.add(Date)) {
