@@ -10,10 +10,6 @@ import java.io.IOException;
 public class SimpleFundTracker {
     private static File myFundFile;
 
-    /**
-     * @param args the command line arguments
-     * @throws java.io.IOException
-     */
     public static void main(String[] args) throws IOException {
         Recorder recorder = new Recorder();
         AverageCalculator Ac = new AverageCalculator();
