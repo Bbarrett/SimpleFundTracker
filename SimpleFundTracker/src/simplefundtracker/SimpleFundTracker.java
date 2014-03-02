@@ -1,7 +1,5 @@
 package simplefundtracker;
 
-//~--- JDK imports ------------------------------------------------------------
-
 import java.io.File;
 import java.io.IOException;
 
