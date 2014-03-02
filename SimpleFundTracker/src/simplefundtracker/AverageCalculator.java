@@ -33,7 +33,7 @@ public class AverageCalculator {
             String[] fundChangeArray = line.split(" ");
 
             for (int i = 1; i < fundChangeArray.length; i += 2) {
-                d             = Double.parseDouble(fundChangeArray[i]);
+                d = Double.parseDouble(fundChangeArray[i]);
                 averageChange += d / i / 2;
             }
 
