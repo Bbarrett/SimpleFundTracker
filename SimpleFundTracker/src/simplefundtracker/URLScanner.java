@@ -1,7 +1,4 @@
-
 package simplefundtracker;
-
-//~--- JDK imports ------------------------------------------------------------
 
 import java.util.Scanner;
 
