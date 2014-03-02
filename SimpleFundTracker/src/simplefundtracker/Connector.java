@@ -1,13 +1,7 @@
-
 package simplefundtracker;
-
-//~--- non-JDK imports --------------------------------------------------------
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-
-//~--- JDK imports ------------------------------------------------------------
-
 import java.io.IOException;
 
 /**
