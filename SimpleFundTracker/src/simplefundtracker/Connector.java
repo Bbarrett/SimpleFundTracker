@@ -3,37 +3,34 @@ package simplefundtracker;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import java.io.IOException;
+import org.jsoup.nodes.Element;
 
 /**
  *
  * @author brandonbarrett
  */
 public class Connector {
-    Document fundDocument;
-    private String fundElement;
+    
     private String fundName;
-    private Double convertedFund;
+    private Document fundDocument;
+    private String fundElement;
 
     public Connector() throws IOException {}
 
     public void findFund(String fundCode) throws IOException {
 
         // Connect to a finance website, grab fund. Make it a String.
-        fundDocument = Jsoup.connect("http://finance.yahoo.com/q?s="+fundCode).get();
-        fundElement  = fundDocument.getElementById("yfs_c10_"+fundCode).ownText();
-        fundName = fundDocument.getElementById("yfi_rt_quote_summary").getElementsByTag("h2").text();
+   fundDocument = Jsoup.connect("http://finance.yahoo.com/q?s="+fundCode).get();
+   fundElement  = fundDocument.getElementById("yfs_c10_"+fundCode).ownText();
+   fundName = fundDocument.getElementById("yfi_rt_quote_summary").getElementsByTag("h2").text();
     }
-
-    public String getfundElement() {
+    public String getFundElement(){
         return fundElement;
     }
-
-    public Double getConvertedFund() {
-        return convertedFund;
-    }
-    public String getFundName(){
+    public String getfundName() {
         return fundName;
     }
+    
 }
 
 
