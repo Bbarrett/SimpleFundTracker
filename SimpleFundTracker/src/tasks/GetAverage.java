@@ -12,6 +12,7 @@ import java.util.TimerTask;
  * @author brandonbarrett
  */
 public abstract class GetAverage extends TimerTask {
+  
     public void runAverage(FileCreator fc) throws IOException {
         AverageCalculator ac = new AverageCalculator();
         File fundFile = fc.getFundFile();
