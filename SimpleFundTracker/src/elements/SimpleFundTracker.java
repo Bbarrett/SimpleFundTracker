@@ -1,11 +1,5 @@
 package elements;
 
-import java.io.IOException;
-
-/**
- *
- * @author brandonbarrett
- */
 public class SimpleFundTracker {
    
 
