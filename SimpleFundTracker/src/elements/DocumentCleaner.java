@@ -7,10 +7,8 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- *
- * @author brandonbarrett
- */
+
+
 public class DocumentCleaner extends Task {
     private BufferedReader fileBr;
 
