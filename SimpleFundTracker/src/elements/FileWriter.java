@@ -7,10 +7,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- *
- * @author brandonbarrett
- */
+
 public class FileWriter extends FileCreator {
     
     private BufferedWriter myBw;
