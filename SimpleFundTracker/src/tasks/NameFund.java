@@ -1,4 +1,3 @@
-
 package tasks;
 
 
@@ -6,10 +5,6 @@ import elements.URLScanner;
 
 import java.util.TimerTask;
 
-/**
- *
- * @author brandonbarrett
- */
 public class NameFund extends TimerTask {
     public NameFund() {}
 
