@@ -7,10 +7,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.TimerTask;
 
-/**
- *
- * @author brandonbarrett
- */
 public abstract class GetAverage extends TimerTask {
   
     public void runAverage(FileCreator fc) throws IOException {
