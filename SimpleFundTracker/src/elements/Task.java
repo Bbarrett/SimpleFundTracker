@@ -3,10 +3,7 @@ package elements;
 import java.io.IOException;
 import java.util.TimerTask;
 
-/**
- *
- * @author brandonbarrett
- */
+
 public class Task extends TimerTask {
    
     private final URLScanner URLSC;
