@@ -2,7 +2,6 @@ package elements;
 
 public class FundGrowthCalculator {
    
-
     public FundGrowthCalculator() {}
 
     public Double calculateYearGrowth(Double averageChange) {
