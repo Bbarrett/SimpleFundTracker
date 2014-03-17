@@ -1,9 +1,5 @@
 package elements;
 
-/**
- *
- * @author brandonbarrett
- */
 public class FundGrowthCalculator {
    
 
