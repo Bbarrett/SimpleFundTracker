@@ -3,10 +3,8 @@ package elements;
 import java.io.File;
 import java.io.IOException;
 
-/**
- *
- * @author brandonbarrett
- */
+
+
 public class FileCreator {
     private final File FUND_FILE;
 

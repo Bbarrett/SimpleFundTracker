@@ -2,10 +2,6 @@ package elements;
 
 import java.util.Scanner;
 
-/**
- *
- * @author brandonbarrett
- */
 public class URLScanner {
     private final Scanner SC = new Scanner(System.in);
     private String fundCode;

@@ -8,10 +8,7 @@ import java.io.IOException;
 
 import java.text.DecimalFormat;
 
-/**
- *
- * @author brandonbarrett
- */
+
 public class AverageCalculator {
     private Double averageChange;
     private String line;

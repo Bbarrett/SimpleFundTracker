@@ -1,10 +1,7 @@
 package elements;
 import java.io.IOException;
 
-/**
- *
- * @author brandonbarrett
- */
+
 public class Fund extends Connector {
  
     private Double initialValue;
