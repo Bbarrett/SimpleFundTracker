@@ -13,6 +13,7 @@ import java.util.TimerTask;
 public class NameFund extends TimerTask {
     public NameFund() {}
 
+    
     @Override
     public void run() {
         URLScanner URL_SCAN = new URLScanner();
