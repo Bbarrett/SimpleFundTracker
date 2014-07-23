@@ -15,7 +15,7 @@ public class Fund extends Connector {
         initialValue = 150.00;
     }
 
-    public Double yearlyContributionTotal(Double initialValue) {
+    public Double yearlyContributionTotal(Double initialValue) {  
         yearlyContribution = initialValue * 26.0;
 
         return yearlyContribution;
