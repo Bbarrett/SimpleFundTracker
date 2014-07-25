@@ -8,3 +8,8 @@ SimpleFundTracker relies on the user to provide the symbol for a particular fund
 This is a project I have been working on for fun. Please don't take any of the numbers or calculations too seriously. It is a total work in progress. I will add more details as the project moves forward. 
 
 
+Not a lot of time to mess with this old project lately, or at least to push changes, but coming soon: 
+
+-An actual working user interface. 
+-Graphing capabilities 
+-What your current retirement income would look like in Bitcoin...you know you want to see.
